@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>File Metadata Microservice API</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- OG properties -->
+  <meta property="fb:app_id" content="" />
+  <meta property="og:url" content="https://file-metadata-project.herokuapp.com/" />
+  <meta property="og:title" content="File Metadata Microservice API" />
+  <meta property="og:description" content="A simple file metadata microservice API that returns the file size of an uploaded file." />
+  <meta property="og:image" content="" />
+
+  <!-- Links -->
+  <link rel="shortcut icon" href="https://jwaynedavidson.com/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://jwaynedavidson.com/scripts/gatracking.js"></script>
+</head>
+
+<body>
+
+  <div>
+    <h1><i class="fa fa-cogs"></i> File Metadata Microservice API</h1>
+
+    <h3><i class="fa fa-user"></i> Coded by <a href="https://jwaynedavidson.com">Joshua Davidson</a></h3>
+
+    <h3><i class="fa fa-info"></i> Description</h3>
+    <p>
+      A simple file metadata microservice API that returns the file size of an uploaded file.
+    </p>
+
+    <p>
+      Upload your file below to give it a try!
+    </p>
+
+    <h3><i class="fa fa-terminal"></i> Example Usage</h3>
+    <form action="/fileupload" method="post" enctype="multipart/form-data">
+        Select file to analyze:<br><br>
+        <input type="file" name="uploadedFile"><br><br>
+        <input type="submit" value="Upload File" name="submit">
+    </form>
+
+    <h3><%= fileSize %></h3>
+
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "file-metadata-project",
+  "version": "1.0.0",
+  "description": "Free code camp url shortener microservice project.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "6.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuadavidson/file-metadata-project.git"
+  },
+  "author": "Joshua Davidson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joshuadavidson/file-metadata-project/issues"
+  },
+  "homepage": "https://github.com/joshuadavidson/file-metadata-project#readme",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.7",
+    "multer": "^1.2.0"
+  }
+}
